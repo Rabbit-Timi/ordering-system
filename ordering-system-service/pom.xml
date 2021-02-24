@@ -11,5 +11,13 @@
 
     <artifactId>ordering-system-service</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.timmtiy</groupId>
+            <artifactId>ordering-system-dao</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
