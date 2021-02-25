@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/ordering-system.iml" filepath="$PROJECT_DIR$/.idea/ordering-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ordering-system-dao/ordering-system-dao.iml" filepath="$PROJECT_DIR$/ordering-system-dao/ordering-system-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ordering-system-service/ordering-system-service.iml" filepath="$PROJECT_DIR$/ordering-system-service/ordering-system-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ordering-system-web/ordering-system-web.iml" filepath="$PROJECT_DIR$/ordering-system-web/ordering-system-web.iml" />
+    </modules>
+  </component>
+</project>
