@@ -16,6 +16,5 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public Boolean login(UserVO userVO) {
         return userDao.queryUser(Convert.convertVOTODO(userVO)) == 1;
-
     }
 }
