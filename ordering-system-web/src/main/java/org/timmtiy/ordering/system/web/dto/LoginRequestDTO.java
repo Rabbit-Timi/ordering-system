@@ -9,6 +9,6 @@ public class LoginRequestDTO implements Serializable {
 
     private String username;
 
-    private String userPassword;
+    private String password;
 
 }

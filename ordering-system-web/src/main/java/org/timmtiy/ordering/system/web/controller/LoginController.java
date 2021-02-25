@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.timmtiy.ordering.system.service.service.LoginService;
-import org.timmtiy.ordering.system.service.service.impl.LoginServiceImpl;
 import org.timmtiy.ordering.system.web.dto.LoginRequestDTO;
 import org.timmtiy.ordering.system.web.dto.LoginResponseDTO;
 import org.timmtiy.ordering.system.web.util.Convert;
@@ -24,7 +23,7 @@ public class LoginController {
     private LoginService loginService;
 
     @RequestMapping("/login")
-    public LoginResponseDTO login(LoginRequestDTO requestDTO){
+    public LoginResponseDTO login(@RequestBody LoginRequestDTO requestDTO){
         log.info(requestDTO.toString());
         LoginResponseDTO responseDTO = new LoginResponseDTO();
         responseDTO.setSuccess(loginService.login(Convert.convertDTOToVO(requestDTO)));
