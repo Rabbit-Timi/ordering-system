@@ -24,7 +24,7 @@ public class LoginController {
     private LoginService loginService;
 
     @RequestMapping("/login")
-    public LoginResponseDTO login(@RequestBody LoginRequestDTO requestDTO){
+    public LoginResponseDTO login(LoginRequestDTO requestDTO){
         log.info(requestDTO.toString());
         LoginResponseDTO responseDTO = new LoginResponseDTO();
         responseDTO.setSuccess(loginService.login(Convert.convertDTOToVO(requestDTO)));
